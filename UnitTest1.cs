@@ -1,12 +1,10 @@
 using TraitTest.TraitAttributes;
 using Xunit;
-using Xunit.Categories;
 
 namespace TraitTest
 {
     public class UnitTest1
     {
-        [IntegrationTest]
         [Fact]
         public void Test1()
         {
@@ -35,9 +33,25 @@ namespace TraitTest
         //[Feature("iTask")]
 
         [Integration]
-        [Bug(12321)]
+        [Builder]
         [Fact]
         public void Test2()
+        {
+
+        }
+
+        [Feature(Feature.Flow)]
+        [Feature(Feature.Document)]
+        [Fact]
+        public void Test_IfFeatureTraitIsApplied()
+        {
+
+        }
+
+        [Integration]
+        [Activator]
+        [Fact]
+        public void Test3()
         {
 
         }

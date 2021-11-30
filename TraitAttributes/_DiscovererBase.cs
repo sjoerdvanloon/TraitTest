@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraitTest.TraitAttributes
 {
-    public class DiscovererUtil
+    internal abstract class DiscovererBase
     {
-        internal const string AssemblyName = "TraitTest";
-
     }
 }
